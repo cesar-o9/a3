@@ -5,7 +5,7 @@ set -u
 # shellcheck source=/dev/null
 source "$(dirname "${BASH_SOURCE[0]}")/_a3"
 
-ref=${1:-origin/main}
+ref=${1:-main}
 
 status=$(git status --porcelain)
 # -z = empty -> nothing pending
